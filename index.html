@@ -3,55 +3,406 @@
 <head>
 	<meta charset="utf-8">
 	<title>Trustpest</title>
-	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<!-- header -->
-	<header id="header">
-		<h1>Trustpest</h1>
+	<header id="header" class="container d-flex align-items-center justify-content-between">
+		<div class="brand text-end">
+			<h1 class="fw-bold">Trustpest</h1>
+			<p>Stay Safe from Insect</p>
+		</div>
+		<div>
+			<a href="tel:+8801713076052" class="telephone"><i class="fas fa-phone"></i> <b>+8801713-076052</b></a>
+			<div>
+				<a href="https://www.facebook.com/trustpestcontrolbd" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				<i class="fab fa-youtube-square"></i>
+				<i class="fab fa-instagram-square"></i>
+				<i class="fab fa-linkedin"></i>
+			</div>
+		</div>
 	</header>
 	<!-- end header -->
 
 	<!-- nav -->
-	<nav></nav>
+	<nav class="navbar navbar-expand-lg navbar-dark bg sticky-top">
+	  <div class="container">
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#about">About</a>
+	        </li>
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Services
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="bed-bug-control.html">Bed Bug Control</a></li>
+	            <li><a class="dropdown-item" href="cockroach-control.html">Cockroach Control</a></li>
+	            <li><a class="dropdown-item" href="termite-control.html">Termite Control</a></li>
+	            <li><a class="dropdown-item" href="rodent-control.html">Rodent Control</a></li>
+	            <li><a class="dropdown-item" href="ant-control.html">Ant Control</a></li>
+	            <li><a class="dropdown-item" href="fumigation-control.html">Fumigation Control</a></li>
+	            <li><a class="dropdown-item" href="#">Wood Borer Control</a></li>
+	          </ul>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#process">Process</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#reviews">Reviews</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#clients">Clients</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#footer">Contact Us</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
 	<!-- end nav -->
 
-	<main>
-		<!-- banner -->
-		<section id="banner"></section>
-		<!-- end banner -->
+	<!-- banner -->
+	<section id="banner">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  	<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="assets/images/banner-1.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="assets/images/banner-2.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="assets/images/banner-3.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="assets/images/banner-4.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="assets/images/banner-5.jpg" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	</section>
+	<!-- end banner -->
 
+	<main class="container">
 		<!-- about -->
-		<section id="about"></section>
+		<section id="about">
+			<h2 class="text-center my-5">Who We Are</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<p class="my-5">Trust Pest control services is one of the most popular government approved pest control services in Bangladesh. It's also leading brand of pest control services field in Bangladesh. We provide all kinds of pest control services such as: rodent control service, cockroach control service, termite control service, bed bug control service, ants control service, spider control service, mosquitoes control service and container fumigation services etc. We provide our services in all over Bangladesh.</p>
+				</div>
+				<div class="col-md-6">
+					<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Ftrustpestcontrolbd%2Fvideos%2F189129635867900%2F&show_text=false&width=560&t=0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+				</div>
+			</div>
+		</section>
 		<!-- end about -->
 
 		<!-- services -->
-		<secion id="services"></secion>
+		<secion id="services">
+			<h2 class="text-center my-5">Our Services</h2>
+			<div class="swiper servicesSwiper">
+		      <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<figure>
+		        		<img src="assets/images/bed-bug.jpg">
+		        		<figcaption>Bed Bug Control</figcaption>
+		        	</figure>
+		        </div>
+		        <div class="swiper-slide">
+		        	<figure>
+		        		<img src="assets/images/cockroach.png">
+		        		<figcaption>Cockroach Control</figcaption>
+		        	</figure>
+		        </div>
+		        <div class="swiper-slide">
+		        	<figure>
+		        		<img src="assets/images/rodent.png">
+		        		<figcaption>Rodent Control</figcaption>
+		        	</figure>
+		        </div>
+		        <div class="swiper-slide">
+		        	<figure>
+		        		<img src="assets/images/termite.png">
+		        		<figcaption>Termite Control</figcaption>
+		        	</figure>
+		        </div>
+		        <div class="swiper-slide">
+		        	<figure>
+		        		<img src="assets/images/ant.png">
+		        		<figcaption>Ant Control</figcaption>
+		        	</figure>
+		        </div>
+		        <div class="swiper-slide">
+		        	<figure>
+		        		<img src="assets/images/wood-borer.jpg">
+		        		<figcaption>Wood Borer Control</figcaption>
+		        	</figure>
+		        </div>
+		        <div class="swiper-slide">
+		        	<figure>
+		        		<img src="assets/images/fumigation.png">
+		        		<figcaption>Fumigation Control</figcaption>
+		        	</figure>
+		        </div>
+		      </div>
+		      <div class="swiper-pagination"></div>
+		    </div>
+		</secion>
 		<!-- end services -->
 
 		<!-- process -->
-		<section id="process"></section>
+		<section id="process">
+			<h2 class="text-center my-5">Our Process</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="flip-card">
+					  <div class="flip-card-inner">
+					    <div class="flip-card-front">
+					      <img src="assets/images/process-1.jpg" alt="">
+					    </div>
+					    <div class="flip-card-back">
+					      <div>
+					      	<h3>Assessment</h3> 
+					      	<p>The first step in Care pest Control Service Process is a complete inspection.</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="flip-card">
+					  <div class="flip-card-inner">
+					    <div class="flip-card-front">
+					      <img src="assets/images/process-2.jpg" alt="">
+					    </div>
+					    <div class="flip-card-back">
+					    	<div>
+						      <h3>Implementation</h3> 
+						      <p>Our technician will inspect every single corner of your home, inside and outside.</p>
+					    	</div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="flip-card">
+					  <div class="flip-card-inner">
+					    <div class="flip-card-front">
+					      <img src="assets/images/process-3.png" alt="">
+					    </div>
+					    <div class="flip-card-back">
+					      <div>
+					      	<h3>Monitoring</h3> 
+					      	<p>The final step in Trustpest Control Service process is monitoring.</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- end process -->
 
+		<!-- expect -->
+		<section id="expect" class="my-5">
+			<div class="row">
+				<div class="col-md-6">
+					<h1 class="display-3 text-center text-uppercase">What do you <br> expect <br> from our <br> services?</h2>
+				</div>
+				<div class="col-md-6">
+					<ul>
+						<li><i class="fas fa-check-circle"></i> 24/7 Customer Service</li>
+						<li><i class="fas fa-check-circle"></i> Free Assessment</li>
+						<li><i class="fas fa-check-circle"></i> 30 Days Money Back Guarantee</li>
+						<li><i class="fas fa-check-circle"></i> Well Trained Technician</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- end expect -->
+
 		<!-- reviews -->
-		<section id="reviews"></section>
+		<section id="reviews">
+			<h2 class="text-center my-5">Our Happy Customers Represent Our Services</h2>
+			<div class="row g-2">
+        <div class="col-md-4">
+            <div class="card p-3 text-center px-4">
+            	<div class="user-image">
+            		<img src="https://i.imgur.com/PKHvlRS.jpg" class="rounded-circle">
+            	</div>
+                <div class="user-content">
+                    <h5 class="mb-0">Bruce Hardy</h5>
+                    <h6>Software Developer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3 text-center px-4">
+            	<div class="user-image">
+            		<img src="https://i.imgur.com/w2CKRB9.jpg" class="rounded-circle">
+            	</div>
+                <div class="user-content">
+                    <h5 class="mb-0">Mark Smith</h5>
+                    <h6>Web Developer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3 text-center px-4">
+            	<div class="user-image">
+            		<img src="https://i.imgur.com/ACeArwY.jpg" class="rounded-circle">
+            	</div>
+                <div class="user-content">
+                    <h5 class="mb-0">Veera Duncan</h5>
+                    <h6>Software Architect</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            </div>
+        </div>
+    	</div>
+		</section>
 		<!-- end reviews -->
 
 		<!-- clients -->
-		<section id="clients"></section>
+		<section id="clients">
+			<h2 class="text-center my-5">Our Happy Clients</h2>
+			<div class="swiper clientsSwiper">
+		      <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<img src="assets/images/client-1.png">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="assets/images/client-2.webp">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="assets/images/client-3.png">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="assets/images/client-4.jpg">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="assets/images/client-5.jpg">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="assets/images/client-6.jpg">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="assets/images/client-7.png">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="assets/images/client-8.png">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="assets/images/client-9.png">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="assets/images/client-10.jpg">
+		        </div>
+		      </div>
+		      <div class="swiper-pagination"></div>
+		    </div>
+		</section>
 		<!-- end clients -->
 	</main>
 
 	<!-- footer -->
-	<footer></footer>
+	<footer id="footer" class="mt-5 py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<ul>
+						<h5>Trustpest</h5>
+						<li><a href="#"><i class="fas fa-map-marked-alt"></i> 99, senpara, Mirpur 10 Dhaka, Dhaka Division, Bangladesh</a></li>
+						<li><a href="tel:+8801713076052"><i class="fas fa-phone-alt"></i> +8801713-076052</a></li>
+						<li><a href="#"><i class="fas fa-envelope"></i> trustpest@gmail.com</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5>Company</h6>
+					<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Process</a></li>
+						<li><a href="#">Blogs</a></li>
+						<li><a href="#">Reviews</a></li>
+						<li><a href="#">Career</a></li>
+					</ul>
+				</div>
+				<div class="col-md-5">
+					<h5>Payment Method</h6>
+					<img src="">
+				</div>
+			</div>
+			<p class="text-center">2021 &copy; Trustpestbd | Powered by <b>Rhythmic Coder</b></p>
+		</div>
+	</footer>
 	<!-- end footer -->
 
 	<!-- script -->
 	<script type="text/javascript" src="app.js"></script>
 	<!-- Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".servicesSwiper", {
+      slidesPerView: 4,
+      spaceBetween: 15,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".clientsSwiper", {
+      slidesPerView: 7,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>

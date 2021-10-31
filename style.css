@@ -9,3 +9,158 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #212529;
+}
+a:hover {
+	color:  #c9184a;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+/* header */
+.brand h1 {
+	margin: 0;
+	text-transform: uppercase;
+}
+.telephone {
+	font-size: 18px;
+}
+.fab {
+	font-size: 35px;
+	margin-right: 10px;
+}
+.fa-facebook-square {
+	color: #3a86ff;
+}
+.fa-youtube-square {
+	color: #e40b0b;
+}
+.fa-instagram-square {
+	color: #ef476f;
+}
+.fa-linkedin {
+	color: #0466c8;
+}
+/* end header */
+
+/* nav */
+.bg {
+	background-color: #9a031e;
+}
+/* end nav */
+
+/* banner */
+#banner img{
+	height: 600px;
+}
+/* end banner */
+
+/* about */
+#about iframe {
+	height: 400px;
+	width: 100%;
+}
+/* end about */
+
+/* services */
+#services {
+	text-align: center;
+}
+#services img {
+	height: 100%;
+	border-radius: 50%;
+}
+/* end services */
+
+/* process */
+#process img {
+	height: 250px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 250px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #800f2f;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* end process */
+
+/* expect */
+#expect {
+	background-image: url('assets/images/expect-bg.png');
+}
+#expect .row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* end expect */
+
+/* reviews */
+#reviews img {
+	height: 100px;
+	width: 100px;
+}
+#reviews .card {
+    border: none;
+}
+
+#reviews .ratings i {
+    color: #c9184a;
+}
+/* end reviews */
+
+/* footer */
+footer {
+	background-color: #590d22;
+	color: #fff0f3;
+}
+footer a {
+	color: #fff0f3;
+}
+/* end footer */
